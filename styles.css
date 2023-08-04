@@ -1,40 +1,81 @@
-body{
-    background-image:url("back.png");
-    background-size:cover;
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Montserrat&family=Plus+Jakarta+Sans:wght@400;500&family=Roboto&family=Rubik:ital,wght@0,300;0,500;1,800&display=swap");
+
+body {
+  font-family: "EB Garamond", serif;
+  background-size: cover;
+  background-image: url("back.png");
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.life {
+  font-size: 80px;
+  font-weight: 400;
+  margin-top: 45px;
+}
+.better {
+  font-size: 60px;
+  font-weight: 400;
+  margin-top: -35px !important;
 }
 
-.logo{
-    margin:30px;
-    display:flex;
-    justify-content: center;
+.tragon{
+  font-size:60px;
 }
 
-.vector{
-    margin-left:45%;
-    margin-top: -40px;
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40%;
 }
 
-.nav{
-    margin: -35px 0 0 70%;
-    display:flex;
-    justify-content: space-evenly;
-    width: 25%;
-    height: 20px;
+
+.nav {
+  margin: -50px 0 0 70%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
 }
 
-.center{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: baseline;
-    align-content: center;
-    flex-wrap: wrap;
-    margin-top:20%;
+.center {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 15%;
+  flex-wrap: wrap;
 }
-.scroll{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:15%;
-    flex-direction: column;
+.scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  flex-direction: column;
+  font-size:22px;
 }
+
+.logo .vector{
+  margin-top:-20px;
+  width:19%;
+}
+@media screen and (max-width:800px){
+  .nav{
+    margin-top: 30px;
+    display: inline-block;
+  }
+  .tragon{
+    font-size: 45px;
+  }
+  .logo .vector{
+    display:none;
+  }
+  .better{
+    font-size: 45px;
+  }
+  body{
+    background-size:auto;
+  }
+  .scroll{
+    margin-top: 50%;
+    font-size: 30px;
+  }
+} 
